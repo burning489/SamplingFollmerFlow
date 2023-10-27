@@ -1,0 +1,16 @@
+.DS_Store
+
+.vscode
+.idea
+
+__pycache__
+.ipynb_checkpoints
+
+notebook
+assets/*
+scripts
+*.ipynb
+
+*.egg-info
+
+!.gitkeep
