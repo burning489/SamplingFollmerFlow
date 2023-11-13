@@ -3,9 +3,8 @@ This repo contains the implementation for the paper [Sampling via Föllmer Flow]
 
 [![arXiv](https://img.shields.io/badge/arXiv-2311.03660-b31b1b.svg?style=for-the-badge)](https://arxiv.org/abs/2311.03660)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HVsa8qDyCeRVTUT4lxH0zQ-TwerYlWm8?usp=sharing)
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
-![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 ## Brief
 
@@ -19,7 +18,13 @@ We also propose leveraging the Föllmer flow as a **warmstart** strategy for exi
 
 We can also leverage deep neural networks to fit  the trajectory of sample evaluations. This allows us to obtain a generator for **one-step** sampling as a result.
 
-## Try the demo with Docker
+## Simple Tries
+
+### with Google Colab
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HVsa8qDyCeRVTUT4lxH0zQ-TwerYlWm8?usp=sharing) `demo.ipynb`
+
+### with Docker
 
 Install [Docker](https://docs.docker.com/engine/install/) first.
 
