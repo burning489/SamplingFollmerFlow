@@ -1,6 +1,12 @@
 # Sampling via Föllmer Flow
 This repo contains the implementation for the paper [Sampling via Föllmer Flow](https://arxiv.org/abs/2311.03660)
 
+[![arXiv](https://img.shields.io/badge/arXiv-2311.03660-b31b1b.svg?style=for-the-badge)](https://arxiv.org/abs/2311.03660)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
+![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
 ## Brief
 
 We introduce a novel **unit-time ODE flow** called the Föllmer flow, which efficiently transforms a Gaussian measure into a desired target measure at time 1. We apply Euler's method, where the velocity field is calculated either analytically or through **Monte Carlo** approximation using Gaussian samples. Time evolution of Föllmer flow on 8-mode gaussian mixtures is illustrated below:
@@ -12,6 +18,17 @@ Through numerical experiments on mixture distributions in 1D, 2D, and  high-dime
 We also propose leveraging the Föllmer flow as a **warmstart** strategy for existing Markov Chain Monte Carlo (MCMC) methods, aiming to mitigate mode collapses and enhance their performance.
 
 We can also leverage deep neural networks to fit  the trajectory of sample evaluations. This allows us to obtain a generator for **one-step** sampling as a result.
+
+## Try the demo with Docker
+
+Install [Docker](https://docs.docker.com/engine/install/) first.
+
+```bash
+docker pull dingz489/fflow:demo-v0.1
+docker run --rm -it -p 8888:8888 dingz489/fflow:demo-v0.1
+```
+
+Then enter `localhost:8888` in your browser, open the `demo.ipynb` and run it to reproduce the demo picture!
 
 ## Dependencies
 
